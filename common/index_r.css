@@ -523,16 +523,15 @@
     .bottom-cta .cta-buttons ul {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        width: 180px;
+        gap: 5px;
         margin: 0 auto;
     }
     .bottom-cta .cta-buttons ul li {
-        width: 100%;
+        width: 200px;
     }
     .bottom-cta .cta-buttons ul li .btn {
         padding: 12px 10px;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     /* フッター */
