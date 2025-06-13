@@ -83,6 +83,9 @@
     }
 
     /* お悩み解決項目 */
+	.problems-solution {
+    padding: 30px 20px;
+}
   	.problem-tabs {
         flex-direction: row; 
         flex-wrap: nowrap;  
@@ -94,7 +97,7 @@
 
     .problem-tab {
         flex-shrink: 1; 
-        min-width: 50px; 
+        min-width: 30px; 
         padding: 8px 5px; 
         font-size: 0.8em;
         margin: 0 auto; 
@@ -117,7 +120,7 @@
     }
 
     .problem-area-left, .solution-area-left {
-        width: 100px;
+        width: 50px;
         margin-bottom: 10px;
     }
 
