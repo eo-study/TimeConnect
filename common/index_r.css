@@ -363,7 +363,7 @@
     }
 
     .problem-tab {
-        min-width: 160px; 
+        min-width: 170px; 
         padding: 14px 10px;
         font-size: 0.8em;
 		margin: 0 auto;
@@ -396,7 +396,7 @@
 
     .problem-area-right ul, .solution-area-right p {
         font-size: 0.9em;
-        padding-left: 15px; 
+        padding-left: 10px; 
     }
 
     /* 新しい機能紹介セクション */
@@ -581,7 +581,6 @@
 /* さらに小さなデバイス用 */
 @media (max-width: 374px) {
     .problem-tab {
-        min-width: 150px;
     }
 }
 
