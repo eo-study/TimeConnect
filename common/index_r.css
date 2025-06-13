@@ -357,15 +357,22 @@
     }
 
     /* お悩み解決項目 */
+	.problem-contents {
+		max-width: 100%;
+	    padding: 8px;
+
+	}	
     .problem-tabs {
         justify-content: flex-start; 
         gap: 10px;
     }
 
     .problem-tab {
-        min-width: 100%; 
-        padding: 12px 8px;
+        min-width: 90%; 
+        padding: 12px 5px;
         font-size: 0.8em;
+		display: flex; 
+    	flex-direction: column; /* 縦並び */
 		margin: 0 auto;
 		align-items: center;
 		text-align: center;
