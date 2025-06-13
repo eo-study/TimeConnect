@@ -363,8 +363,8 @@
     }
 
     .problem-tab {
-        min-width: 170px; 
-        padding: 14px 10px;
+        min-width: 100%; 
+        padding: 12px 8px;
         font-size: 0.8em;
 		margin: 0 auto;
 		align-items: center;
