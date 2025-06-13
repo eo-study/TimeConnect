@@ -1,0 +1,945 @@
+/* 基本設定 */
+body {
+
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1260px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.0em;
+	margin-top: 0;
+    margin-bottom: 0;
+	
+}
+
+h2 {
+    font-size: 2em;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; 
+}
+
+.btn-primary {
+	padding-left: 60px;
+	padding-right: 60px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.btn-secondary:hover {
+    background-color: #e2f0ff;
+    text-decoration: none;
+}
+
+/* 新しいボタンカラーの定義 */
+.btn-orange {
+    background-color: #ff9900; 
+    color: #fff;
+    border: none;
+}
+
+.btn-orange:hover {
+    background-color: #e68a00;
+    text-decoration: none;
+}
+
+.btn-blue-dark {
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+}
+
+.btn-blue-dark:hover {
+    background-color: #006b8f;
+    text-decoration: none;
+}
+
+/* ヘッダー */
+header {
+    background-color: #fff;
+    padding: 15px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; /* スクロールしても表示されるように */
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* ロゴと右側要素を左右に配置 */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-left: 280px; 
+    gap: 20px; /* 電話番号とナビゲーションの間のスペース */
+    flex-wrap: wrap;
+    justify-content: flex-end; /* ナビゲーションと連絡先を右寄せ */
+    flex-grow: 1; /* 残りのスペースを埋めて、ボタンを右端に寄せる */
+}
+
+.logo img {
+    height: 100%; /* ロゴの高さ調整 */
+}
+
+.contact-info {
+    text-align: right;
+    white-space: nowrap; /* 電話番号と営業時間が改行されないように */
+}
+
+.contact-info .tel-image {
+    height: 18px; /* 電話番号画像の高さ調整 */
+    vertical-align: middle; /* テキストと揃える */
+    margin-right: 5px;
+}
+
+.contact-info .business-hours {
+    font-size: 0.85em;
+    color: #555;
+    margin: 0 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* ナビゲーションとボタンの間のスペース */
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px; /* リンクとボタン間のスペースを調整 */
+    justify-content: flex-end; /* ナビゲーション内のボタンを右寄せ */
+    flex-grow: 1; /* ulが使用可能なスペースを埋める */
+}
+
+header nav ul li {
+    display: inline-block; /* インラインブロックで横並び */
+    margin: 0;
+}
+
+header nav ul li a.btn {
+    display: block; /* aタグをブロック要素にしてパディングを有効に */
+    padding: 10px 15px;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+/* メインビジュアル (Hero Section) */
+.hero {
+    background-color: #e0f2f7; 
+    padding: 30px 10px;
+    position: relative;
+    overflow: hidden;
+    background-image: radial-gradient(#e0f2f7 15%, transparent 16%),
+                      radial-gradient(#e0f2f7 15%, transparent 16%);
+    background-size: 20px 20px; 
+    background-position: 0 0, 10px 10px; 
+}
+
+.hero .hero-content { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* テキストエリアと画像エリアの間隔 */
+    flex-wrap: wrap; /* レスポンシブ対応で折り返す */
+}
+
+.hero-text-area {
+    flex: 1;
+    min-width: 250px; /* 最小幅 */
+    max-width: 520px;
+    text-align: left; /* 左寄せ */
+    z-index: 2; /* 画像より手前に表示 */
+}
+
+.hero-image-area {
+    flex: 1;
+	padding-top: 10px;
+    min-width: 120px;
+    max-width: 380px; /* 画像エリアの最大幅を調整 */
+    position: relative; /* 画像を配置する基準 */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 垂直方向中央に配置 */
+    z-index: 1; /* テキストより奥に表示 */
+}
+
+.hero-combined-image { 
+    width: 100%; 
+    height: 100%;
+    display: block;
+    max-width: 450px; 
+}
+
+.hero h1 {
+    font-size: 2.3em; /* サイズ調整 */
+    margin-bottom: 10px;
+	margin-top:5px;
+	letter-spacing:0.05px;
+	padding: 5px 0px;
+    line-height: 1.5; /* 行間を調整 */
+    text-align: left; /* 左寄せ */
+}
+
+.hero h1 span.main{
+	font-size: 1.4em;
+	color: #0033cc;
+	letter-spacing:0.1em;
+}
+
+.hero .hero-description { 
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: left; /* 左寄せ */
+}
+
+.hero-buttons ul { /* hero-buttonsのulにFlexboxを適用 */
+    display: flex;
+    gap: 15px; /* ボタン間のスペース */
+    flex-wrap: wrap; /* 小さい画面で折り返す */
+    list-style: none; /* リストの点を削除 */
+    margin: 0; /* デフォルトマージンをリセット */
+    padding: 0; /* デフォルトパディングをリセット */
+    justify-content: flex-start; /* 左寄せ */
+}
+
+.hero-buttons ul li .btn {
+    display: block; /* liの中でボタンをブロック要素にする */
+}
+
+/* お悩み解決項目 (Problems Solution Section) */
+.problems-solution {
+    padding: 40px 50px 30px 50px;
+    background-color: #f9f9f9;
+}
+.problems-solution h2{
+	margin-top:5px;
+	padding: 30px 0 5px 0;
+}
+.problem-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin-bottom: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.problem-tab {
+    cursor: pointer;
+    padding: 10px; /* パディングを調整 */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0; /* 縮まないように */
+    min-width: 250px; /* タブの最小幅を画像に合わせて調整 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex; 
+    flex-direction: column; /* 縦並び */
+    justify-content: center; /* 垂直方向の中央揃え */
+    align-items: center; /* 水平方向の中央揃え */
+}
+
+.problem-tab:hover {
+    background-color: #f0f0f0;
+}
+
+.problem-tab.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+}
+
+.problem-tab dl {
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+.problem-tab dt {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333; /* 非アクティブ時のdtの色 */
+}
+
+.problem-tab.active dt {
+    color: #fff; /* アクティブ時のdtの色 */
+}
+
+.problem-tab dd {
+    margin: 0; /* デフォルトの左マージンをリセット */
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #666; /* 非アクティブ時のddの色 */
+    line-height: 1.4; /* 行間調整 */
+    margin-top: 5px; /* dtとの間のスペース */
+    word-break: break-word; /* 長い単語でも改行されるように */
+    overflow-wrap: break-word; /* 長い単語でも改行されるように */
+}
+
+.problem-tab.active dd {
+    color: #fff; /* アクティブ時のddの色 */
+}
+
+.problem-contents {
+	display: flex;
+    background-color: #fff;
+	margin-left: auto;
+  	margin-right: auto;
+	margin-bottom: 30px;
+	max-width: 920px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    min-height: 200px;
+	justify-content: center; /* 垂直方向の中央揃え */
+    align-items: center; /* 水平方向の中央揃え */
+}
+
+.problem-content {
+    display: none;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.problem-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* お悩みエリアと解決方法エリアのスタイル */
+.problem-area, .solution-area {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px; /* 下矢印との間のスペース */
+    flex-wrap: nowrap; 
+}
+
+.solution-area {
+    margin-top: 30px; /* 下矢印からのスペース */
+    margin-bottom: 30px; /* 最後のエリアなので下マージンなし */
+}
+
+.problem-area-left, .solution-area-left {
+    flex-shrink: 0; /* 画像が縮まないように */
+    width: 180px; /* 画像の固定幅 */
+    text-align: center;
+	display: block;
+
+}
+
+.problem-illustration, .solution-illustration {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* 中央寄せ */
+}
+
+.problem-area-right, .solution-area-right {
+    flex-grow: 1; /* 残りのスペースを埋める */
+}
+
+.problem-area-right h3, .solution-area-right h3 {
+    text-align: left; /* 左寄せ */
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #0033cc;; /* 青系に */
+}
+
+.problem-area-right ul {
+    list-style: disc; /* リストのマーク */
+    padding-left: 20px;
+    margin: 0;
+}
+
+.problem-area-right ul li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: #555;
+}
+
+.solution-area-right p {
+    font-size: 1em;
+	padding-left: 10px;
+    color: #555;
+    margin: 0;
+}
+
+.arrow-down {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.arrow-down img {
+    width: 50px; 
+    height: auto;
+    display: inline-block;
+}
+
+/* 機能紹介 */
+.features-overview {
+    padding: 10px 10px 70px 10px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-overview h2 {
+    margin-bottom: 40px;
+	margin-top: 5px;
+}
+
+.feature-circles {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.feature-circle {
+    width: 180px; 
+    height: 180px;
+    border-radius: 50%;
+    background-color: #ddf9ff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px; 
+    line-height: 1.5; 
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.feature-circle p {
+    margin: 0;
+	padding: 0 25px;
+}
+
+.features-cta .btn {
+    padding: 15px 40px;
+    font-size: 1.1em;
+}
+
+/* 料金システム (Pricing Section) */
+.pricing {
+    padding-top: 20px; 
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.pricing h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 初期費用・サポート費用ボックス */
+.initial-cost-box {
+    background-color: #ffffff;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.initial-cost-box h3 {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 10px 0;
+    margin: -20px -20px 20px -20px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+.initial-cost-box .cost-value {
+    font-size: 4em; 
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    line-height: 1;
+}
+
+.initial-cost-box .cost-value .unit {
+    font-size: 0.5em; 
+    font-weight: normal;
+    vertical-align:bottom; 
+	
+}
+
+/* 料金計算エリア */
+.price-calc-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.price-plan-item {
+    background-color: #f1fdff; 
+	border: 1px solid #007bff;
+    border-radius: 8px;
+    padding: 30px;
+    min-width: 280px; 
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.price-plan-item .item-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    word-break: break-word;
+    overflow-wrap: break-word; 
+}
+
+.price-plan-item .item-value {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+}
+
+.price-plan-item .item-value .amount {
+    font-size: 1.8em;
+}
+
+.price-plan-item .item-value .unit {
+    font-size: 0.8em; 
+    vertical-align: baseline;
+    margin-left: 3px;
+}
+
+.price-plan-item .item-value .note {
+    font-size: 0.7em;
+    color: #888;
+    vertical-align: top;
+}
+
+
+.operator {
+    font-size: 3em;
+    font-weight: bold;
+    color: #666;
+}
+
+.user-icons-new { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: auto; 
+}
+
+.user-icons-new img {
+    width: 260px;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.monthly-fee-note {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* サポートエリア */
+.support-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #ffffff; 
+    border-left: 8px solid #007bff; 
+	border-right:1px solid #007bff; 
+	border-top:1px solid #007bff; 
+	border-bottom:1px solid #007bff; 
+    padding: 20px 30px;
+    max-width: 700px;
+    margin: 0 auto 10px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.support-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+    flex-shrink: 0; 
+}
+
+.support-text {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0;
+}
+
+.support-note { 
+    font-size: 0.8em;
+    color: #333;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/*CTAセクション*/
+.cta {
+    background-color: #e0f2f7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.cta p {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.cta .cta-buttons ul { 
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+
+.cta .cta-buttons ul li .btn {
+    display: block;
+    padding: 15px 80px;
+    font-size: 1.1em;
+}
+
+
+/* 導入企業インタビュー (Interview Section) */
+.interview {
+    padding: 40px 0 70px 0;
+    background-color: #fff;
+}
+
+.interview-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.interview-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden; /* 画像の角を丸くする */
+    flex: 1;
+    min-width: 250px;
+    max-width: 290px;
+    text-align: center;
+    padding-bottom: 30px; /* 下部に余白 */
+}
+
+.interview-card img {
+    width: 100%;
+    height: 130px; /* 画像の高さ固定 */
+    object-fit: cover; /* 画像がはみ出さないように */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.interview-card .company-name {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+.interview-card .interview-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+	text-align: left;
+	padding: 0 15px;
+    color: #333;
+}
+
+.interview-card a {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.interview-card a:hover {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* よくある質問 */
+.faq {
+    padding: 20px 0 70px 0;
+    background-color: #f9f9f9;
+}
+
+.faq-items {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden; /* 回答がスムーズに開閉するように */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.faq-item .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    cursor: pointer;
+    background-color: #eaf6ff; /* 質問の背景色 */
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item .question:hover {
+    background-color: #d1ecf1;
+}
+
+.faq-item .question p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.faq-item .arrow-icon {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333; /* 下向きの矢印 */
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .arrow-icon {
+    transform: rotate(180deg); /* 上向きの矢印 */
+}
+
+.faq-item .answer {
+    padding: 0 25px;
+    max-height: 0; /* 初期状態では非表示 */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* アニメーション */
+    background-color: #fff;
+}
+
+.faq-item.active .answer {
+    max-height: 200px; /* 回答の高さに合わせて調整、または `height: auto` の代替 */
+    padding: 10px 25px;
+}
+
+.faq-item .answer p {
+    margin-top: 0;
+    margin-bottom: padding: 15px 25px;/* 回答内のテキストの余白 */
+    font-size: 0.95em;
+    color: #555;
+}
+/* フッターのスタイル */
+footer {
+    background-color: #fff; /* 背景色を白に変更 */
+    color: #333; /* テキスト色を濃いグレーに変更 */
+    padding: 40px 0; /* パディングを調整 */
+    text-align: center; /* 全体を中央寄せ */
+    font-size: 0.9em;
+    border-top: 1px solid #eee; /* 上部に細い境界線を追加 */
+}
+
+footer .container {
+    /* Flexboxは中の.footer-contentに適用するため、ここでは特別な指定なし */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* 縦並び */
+    align-items: center; /* 中央寄せ */
+    gap: 15px; /* 要素間のスペース */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: flex-end; /* ロゴとテキストの下端を揃える */
+    gap: 10px; /* ロゴとテキストの間隔 */
+}
+
+.footer-logo img {
+    height: 35px; /* フッターロゴの高さ調整 */
+    vertical-align: middle;
+}
+
+.footer-logo-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* デフォルトマージンをリセット */
+}
+
+.footer-sub-text {
+    font-size: 0.8em;
+    color: #666;
+    margin: 0;
+    position: relative;
+    top: -2px; /* 微調整 */
+}
+
+.copyright {
+    font-size: 0.85em;
+    color: #555;
+    margin: 0;
+}
+
+.company-info {
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 10px; /* 上部にスペース */
+}
+
+.company-info p {
+    margin: 5px 0; /* 行間の調整 */
+}
+
+.footer-links {
+    margin-top: 20px; /* 上部にスペース */
+}
+
+.footer-links p { /* 新しく追加したpタグのスタイル */
+    margin: 0; /* デフォルトマージンをリセット */
+    padding: 0;
+}
+
+.footer-links a {
+    color: #007bff; /* リンク色 */
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+html {
+    scroll-behavior: smooth;
+}
+.pagetop {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #fff;
+    border: solid 2px #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 3px solid #000;
+    border-right: 3px solid #000;
+    transform: translateY(20%) rotate(-45deg);
+}
+

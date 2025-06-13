@@ -1,0 +1,304 @@
+/* common/trialform.css */
+
+.form-section {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.form-title {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-description {
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.trial-form {
+    max-width: 700px; /* フォーム全体の最大幅 */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+.form-group label .required-badge { 
+    display: inline-block;
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 0.7em; 
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 3px; 
+    margin-left: 8px; 
+    vertical-align: middle; 
+    line-height: 1; 
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box; 
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group .form-note {
+    font-size: 0.85em;
+    color: #888;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* アンケートのチェックボックスグループ */
+.questionnaire .question-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.questionnaire .checkbox-group {
+    display: flex; /* チェックボックスを横並びにするため追加 */
+    flex-wrap: wrap; /* 必要に応じて折り返す */
+    gap: 20px; /* チェックボックス間の水平方向の間隔を少し広げる */
+}
+
+.questionnaire .checkbox-group label {
+    display: inline-flex; /* チェックボックスとテキストを横並び */
+    align-items: center;
+    font-weight: normal; 
+    margin-bottom: 1px; 
+    cursor: pointer;
+    font-size: 0.9em; 
+    color: #333;
+    line-height: 1.5; 
+}
+
+.questionnaire .checkbox-group input[type="checkbox"] {
+    width: 20px; 
+    height: 20px;
+    margin-right: 8px; 
+    flex-shrink: 0; /* チェックボックスが縮まないように */
+}
+.other{
+	margin-top:10px; 
+	
+}
+.other p{
+	margin-top:0px; 
+	
+}
+
+/* 利用規約・個人情報保護方針セクション */
+.legal-section {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.legal-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left; /* 左寄せ */
+}
+
+.legal-content {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-height: 150px; /* スクロール可能な高さ */
+    overflow-y: scroll; /* 縦スクロールを有効に */
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.legal-content p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.legal-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* 同意チェックボックス */
+.agreement-group {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center; 
+}
+
+.agreement-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.agreement-group label {
+    font-weight: normal;
+    color: #333;
+    cursor: pointer;
+    text-align: left; /* テキスト左寄せ */
+}
+
+/* 送信ボタン */
+.form-submit {
+    text-align: center;
+}
+
+.btn-submit {
+    padding: 15px 60px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* レスポンシブ対応 (common/index_r.css と連携) */
+@media (max-width: 768px) {
+    .form-section {
+        padding: 40px 0;
+    }
+    .trial-form {
+        padding: 20px;
+    }
+    .form-title {
+        font-size: 1.8em;
+    }
+    .form-description {
+        font-size: 0.9em;
+    }
+    .form-group label,
+    .questionnaire .question-title {
+        font-size: 0.95em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    .questionnaire .checkbox-group label {
+        margin-bottom: 8px; /* タブレットでの垂直方向の間隔 */
+        font-size: 0.95em; /* タブレットでのフォントサイズ */
+    }
+    .questionnaire .checkbox-group input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+    .legal-content {
+        max-height: 120px; /* 高さ調整 */
+        padding: 15px;
+        font-size: 0.85em;
+    }
+    .agreement-group label {
+        font-size: 0.9em;
+    }
+    .btn-submit {
+        padding: 12px 40px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .trial-form {
+        padding: 15px;
+    }
+    .form-title {
+        font-size: 1.5em;
+    }
+    .form-description {
+        font-size: 0.85em;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label,
+    .questionnaire .question-title {
+        font-size: 0.9em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 0.85em;
+    }
+    .questionnaire .checkbox-group {
+        flex-direction: column; /* チェックボックスを縦並び */
+        align-items: flex-start;
+        gap: 5px; /* スマホで縦並びにしたときの行間 */
+    }
+    .questionnaire .checkbox-group label {
+        margin-bottom: 5px; /* スマホで縦並びにしたときの行間 */
+        font-size: 0.9em; /* スマホでのフォントサイズ */
+    }
+    .questionnaire .checkbox-group input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+    }
+    .legal-content {
+        max-height: 100px;
+        font-size: 0.8em;
+    }
+    .agreement-group {
+        flex-direction: column;
+        text-align: center;
+    }
+    .agreement-group input[type="checkbox"] {
+        margin-bottom: 5px;
+    }
+    .agreement-group label {
+        text-align: center;
+        font-size: 0.85em;
+    }
+    .btn-submit {
+        padding: 10px 30px;
+        font-size: 1em;
+    }
+}

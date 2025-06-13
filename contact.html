@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex, nofollow">
+    <title>お問い合わせ - TimeConnect 勤怠</title>
+    <link href="common/index.css" rel="stylesheet" type="text/css">
+    <link href="common/index_r.css" rel="stylesheet" type="text/css">
+    <link href="common/trialform.css" rel="stylesheet" type="text/css">
+	<link href="common/contact.css" rel="stylesheet" type="text/css">
+	<script src="common/script.js"></script>
+</head>
+<body>
+        <header>
+        <div class="container">
+            <div class="header-left">
+                <div class="logo"><a href="index.html"><img src="images/logo.png" width="200" height="45" alt="Time Connect ロゴ"></a>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="contact-info">
+                    <img src="images/tel.png" alt="電話番号 0120-1234-1234" class="tel-image">
+                    <p class="business-hours">平日10:00～18:00</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="contact.html" class="btn btn-primary">お問い合わせ</a></li>
+                        <li><a href="trial.html" class="btn btn-orange">無料で使ってみる</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+   <main>
+        <section class="form-section">
+            <div class="container">
+                <h1 class="form-title">お問い合わせ</h1>
+
+                <div class="contact-phone-info">
+                  <p class="phone-text">お電話でのお問い合わせは下記よりご連絡ください。</p>
+                    <p class="phone-number">
+                        <a href="tel:012012341234" class="tel-link">TEL:0120-1234-1234</a>
+                    </p>
+                    <p class="phone-hours">平日10:00～18:00</p>
+                </div>
+
+                <div class="contact-form-area">
+                    <p class="description">
+                        ※フォームに必須事項とお問い合わせ内容をご入力ください。通常1営業日以内に、担当者よりご返信いたします。<br>
+                        ※土日・祝日および年末年始（12月27日～1月3日）にいただいたお問い合わせについては翌営業日に回答をさせていただきます。
+                    </p>
+
+                    <form action="#" method="post" class="trial-form">
+                        <div class="form-group">
+                            <label for="company_name">会社名<span class="required-badge">必須</span></label>
+                            <input type="text" id="company_name" name="company_name" placeholder="例) 株式会社 TimeConnect" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="your_name">お名前<span class="required-badge">必須</span></label>
+                            <input type="text" id="your_name" name="your_name" placeholder="例) 勤怠 太郎" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">メールアドレス<span class="required-badge">必須</span></label>
+                            <input type="email" id="email" name="email" placeholder="例) info@example.com" required>
+                            <p class="form-note">※連絡可能なメールアドレスをご入力ください</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel_number">電話番号<span class="required-badge">必須</span></label>
+                            <input type="tel" id="tel_number" name="tel_number" placeholder="例) 0120-1234-1234" required>
+                            <p class="form-note">※日中ご連絡のつきやすい電話番号をご入力ください</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiry_item">お問い合わせ項目<span class="required-badge">必須</span></label>
+                            <select id="inquiry_item" name="inquiry_item" required>
+                                <option value="">-以下から選択してください-</option>
+                                <option value="service_inquiry">サービスについて</option>
+                                <option value="price_inquiry">料金について</option>
+                                <option value="technical_support">技術的なサポート</option>
+                                <option value="bug_report">不具合報告</option>
+                                <option value="other_inquiry">その他</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiry_details">お問い合わせ内容<span class="required-badge">必須</span></label>
+                            <textarea id="inquiry_details" name="inquiry_details" rows="8" placeholder="お問い合わせ内容を具体的にご記入ください" required></textarea>
+                        </div>
+
+                       
+                    <div class="form-group questionnaire">
+                        <p class="question-title">[アンケート] どこでTimeConnect勤怠を知りましたか？
+                      <p class="form-note">※複数の選択肢からお選びください</p>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="source[]" value="search_engine"> 検索エンジン</label>
+                            <label><input type="checkbox" name="source[]" value="it_comparison"> IT系情報サイト/比較サイト</label>
+                            <label><input type="checkbox" name="source[]" value="news_blog"> ニュースサイト/ブログ記事</label>
+                            <label><input type="checkbox" name="source[]" value="sns"> SNS (Facebook, Xなど)</label>
+                            <label><input type="checkbox" name="source[]" value="online_seminar"> オンラインセミナー</label>
+                            <label><input type="checkbox" name="source[]" value="exhibition_event"> 展示会/イベント</label>
+                            <label><input type="checkbox" name="source[]" value="introduction"> 知人・取引先からの紹介</label>
+                            <label><input type="checkbox" name="source[]" value="web_ad"> WEB広告</label>
+                            <label><input type="checkbox" name="source[]" value="magazine_ad"> 雑誌/新聞広告</label>
+                            <label id="other-checkbox-label"><input type="checkbox" name="source[]" value="other"> その他</label>
+                        </div>
+                        <div id="other-source-field" class="form-group">
+                        <div class="other">
+							<label for="other_source_text">その他（詳細をご記入ください）</label>
+							
+                       	  <p class="form-note">※その他を選択の方以下にご記入ください。</p>
+                            <input type="text" id="other_source_text" name="other_source_text" placeholder="例) ○○雑誌">
+							</div>
+                        </div>
+                    </div>
+
+                    <div class="legal-section">
+                        <div class="terms-of-use">
+                            <h3 class="legal-title">使用規約</h3>
+                            <div class="legal-content">
+                                <p>本使用規約（以下「本規約」といいます。）は、株式会社TimeConnect（以下「当社」といいます。）が提供するサービス（以下「本サービス」といいます。）に関し、利用者が確認する義務がある事項を定めています。本規約とは別に個別規約がある場合もあるため、利用者は本サービスを利用するにあたり、それらの規約も合わせて確認してください。本規約及び個別規約の内容と当社が別途提示する本サービスの利用に関する規定（以下「個別規定」といいます。）が異なる場合、個別規定が優先して適用されるものとします。</p>
+                                <p>第1条 本サービスの内容<br>
+                                本サービスは、複数の個別サービスで構成されます。一つの個別サービスの利用に関しては、本規約のほか、個別サービスごとに別途使用規約（以下「個別規約」という。）が用意されている場合があります。その場合は、個別規約は本規約の一部として、当社と契約者の間で適用されます。</p>
+                                </div>
+                        </div>
+
+                        <div class="privacy-policy">
+                            <h3 class="legal-title">個人情報保護方針</h3>
+                            <div class="legal-content">
+                                <p>株式会社TimeConnect（以下、当社）は、お客様の個人情報がプライバシーを構成する重要な情報であることを深く認識し、クラウドを使用した勤怠管理システムの提供業務及びそれに付随する業務における個人情報の取り扱いについて、個人情報の適切な保護を実施するために、本個人情報保護方針を定めてお客様の信頼に応えてまいります。</p>
+                                <p>1. 当社が収集する個人情報について<br>
+                                「TimeConnect勤怠」使用規約 個人情報の取り扱い<br>
+                                https://www.TimeConnect.jp/contract/</p>
+                                <p>2. 個人情報の取得について<br>
+                                当社は、適法かつ公正な手段で個人情報を取得します。取得した個人情報は、利用目的の範囲内でのみ利用します。</p>
+                                <p>3. 個人情報の利用目的<br>
+                                当社が収集した個人情報は、以下の目的のために利用します。<br>
+                                ・本サービスの提供、運営、維持<br>
+                                ・お客様からのお問い合わせへの対応<br>
+                                ・新サービスや機能に関する情報提供<br>
+                                ・サービス改善のための分析<br>
+                                ・法令遵守のため</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="agreement-group">
+                        <input type="checkbox" id="agree_terms" name="agree_terms" required>
+                        <label for="agree_terms">使用規約、個人情報保護方針に同意する<span class="required-badge">必須</span></label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-orange btn-submit" disabled>送信する</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+	<a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="images/logo.png" width="200" height="45" alt="Time Connect ロゴ"></a>
+                </div>
+                <p class="copyright">&copy; Time Connect., All Rights Reserved.</p>
+                <div class="company-info">
+                    <p>株式会社 Time Connect</p>
+                    <p>〒163-8001 新宿区西新宿2-8-1</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
