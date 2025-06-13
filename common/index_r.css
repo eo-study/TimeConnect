@@ -343,8 +343,7 @@
     }
 
     .hero-buttons ul li .btn {
-        width: 100%;
-        padding: 12px 20px;
+        padding: 12px 10px;
         font-size: 1em;
     }
 
@@ -525,16 +524,14 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        width: 100%;
-        max-width: 180px;
+        width: 180px;
         margin: 0 auto;
     }
     .bottom-cta .cta-buttons ul li {
         width: 100%;
     }
     .bottom-cta .cta-buttons ul li .btn {
-        width: 100%;
-        padding: 12px 20px;
+        padding: 12px 10px;
         font-size: 1em;
     }
 
