@@ -334,8 +334,7 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        width: 100%;
-        max-width: 250px;
+        width: 200px;
         margin: 0 auto;
     }
 
@@ -490,8 +489,7 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        width: 100%;
-        max-width: 250px;
+        width: 200px;
         margin: 0 auto;
     }
     .cta .cta-buttons ul li {
