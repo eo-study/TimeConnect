@@ -484,18 +484,18 @@
         margin-bottom: 20px;
     }
 
+	
     .cta .cta-buttons ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        width: 100%;
+        width: 200px;
         margin: 0 auto;
     }
     .cta .cta-buttons ul li {
-        width: 80%;
+         width: 200px;
     }
     .cta .cta-buttons ul li .btn {
-        width: 80%;
         padding: 12px 20px;
         font-size: 1em;
     }
