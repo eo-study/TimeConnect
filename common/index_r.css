@@ -88,7 +88,7 @@
     }
 
     .problem-tab {
-        min-width: 200px;
+        min-width: 250px;
         padding: 15px;
     }
 
@@ -362,7 +362,7 @@
     }
 
     .problem-tab {
-        min-width: 120px; 
+        min-width: 160px; 
         padding: 14px 10px;
         font-size: 0.8em;
     }
