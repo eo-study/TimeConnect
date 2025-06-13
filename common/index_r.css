@@ -83,8 +83,12 @@
     }
 
     /* お悩み解決項目 */
-	.problems-solution {
-    padding: 30px 20px;
+.problem-contents {
+	margin-left: auto 0;
+  	margin-right: auto 0;
+	margin-bottom: 30px;
+	max-width: 500px;
+    padding: 10px;
 }
   	.problem-tabs {
         flex-direction: row; 
