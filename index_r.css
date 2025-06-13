@@ -1,0 +1,587 @@
+/* レスポンシブ対応 */
+
+/* iPad (タブレット) 用: 768px - 1024px 範囲 */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 1060px; 
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    /* ヘッダーの調整 */
+    header nav ul {
+        flex-wrap: nowrap;
+        justify-content: flex-end; 
+        gap: 10px; 
+    }
+
+    header nav ul li {
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    header nav ul li a {
+        padding: 8px 15px;
+        font-size: 0.5em;
+    }
+
+    header .header-right {
+        margin-left: 10px; 
+        gap: 10px; 
+        justify-content: flex-end; 
+        width: auto; 
+        margin-top: 0; 
+        flex-grow: 1;
+    }
+
+    .contact-info {
+        flex-shrink: 0; 
+        text-align: right; 
+        width: auto;
+    }
+
+    header nav {
+        gap: 2px; 
+        flex-grow: 0; 
+        width: auto;
+    }
+
+    /* メインビジュアルの調整 */
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero .hero-content {
+        flex-direction: column; 
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text-area {
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .hero h1, .hero .hero-description {
+        text-align: center; 
+    }
+
+    .hero-buttons ul {
+        justify-content: center; 
+    }
+
+    .hero-buttons ul li .btn {
+        padding: 10px 25px;
+        font-size: 1em;
+    }
+
+    /* お悩み解決項目 */
+    .problem-tabs {
+        justify-content: center;
+    }
+
+    .problem-tab {
+        min-width: 100%;
+        padding: 15px;
+		text-align: center;
+    }
+
+    .problem-tab dt {
+        font-size: 1em;
+    }
+
+    .problem-tab dd {
+        font-size: 0.85em;
+        margin-top: 3px;
+    }
+
+    /* お悩み解決エリアの画像とテキストの折り返し */
+    .problem-area, .solution-area {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .problem-area-left, .solution-area-left {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .problem-area-right, .solution-area-right {
+        text-align: left;
+        width: 100%; 
+    }
+
+    .problem-area-right h3, .solution-area-right h3 {
+        text-align: center; 
+    }
+
+    .problem-area-right ul {
+        padding-left: 20px;
+        text-align: left;
+        margin-left: auto; 
+        margin-right: auto;
+        max-width: 400px;
+    }
+	.solution-area-right p {
+        padding-left: 20px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px; 
+    }
+
+    /* 機能紹介 */
+    .features-overview {
+        padding-top: 60px;
+    }
+    .feature-circles {
+        gap: 20px;
+    }
+
+    .feature-circle {
+        width: 160px;
+        height: 160px;
+        font-size: 1em;
+        line-height: 1.35; 
+    }
+
+    /* 料金システム */
+    .initial-cost-box {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    .initial-cost-box h3 {
+        font-size: 1.2em;
+        margin: -15px -15px 15px -15px;
+    }
+    .initial-cost-box .cost-value {
+        font-size: 3.5em;
+    }
+
+    .price-calc-area {
+        gap: 15px;
+    }
+    .price-plan-item {
+        padding: 20px;
+        min-width: 250px;
+    }
+    .price-plan-item .item-title {
+        font-size: 1em;
+    }
+    .price-plan-item .item-value {
+        font-size: 1.3em;
+    }
+    .price-plan-item .item-value .amount {
+        font-size: 1.6em;
+    }
+    .user-icons-new img {
+        width: 120px;
+    }
+    .operator {
+        font-size: 2.5em;
+    }
+    .monthly-fee-note {
+        font-size: 0.8em;
+        margin-bottom: 30px;
+    }
+    .support-area {
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    .support-label {
+        font-size: 1.1em;
+    }
+    .support-text {
+        font-size: 1em;
+    }
+    .support-note {
+        font-size: 0.75em;
+        margin-bottom: 40px;
+    }
+
+    /* CTAのボタン */
+    .cta p {
+        font-size: 1.3em;
+    }
+
+    .cta .cta-buttons ul {
+        gap: 15px;
+    }
+    .cta .cta-buttons ul li .btn {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    /* 導入企業インタビュー */
+    .interview-cards {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .interview-card {
+        width: 80%;
+        max-width: 500px; 
+    }
+
+    /* よくある質問 */
+
+    .faq-item .question p {
+        font-size: 1em;
+    }
+
+    /* フッター */
+    footer {
+        padding: 30px 0;
+    }
+
+
+    .footer-links {
+        margin-top: 15px; 
+    }
+}
+
+
+/* スマートフォン用: 767px 以下 */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        padding-top: 40px;
+    }
+
+    .hero {
+        padding: 30px 0;
+    }
+
+    /* ヘッダー */
+	.logo img {
+    width: 150px; 
+}
+    header .container {
+        flex-direction: column;
+		align-items: center;
+    }
+
+    .header-right {
+        display: none; 
+
+    }
+
+    .contact-info {
+        text-align: left;
+        width: 80%;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: flex-start; 
+        gap: 10px;
+        width: 80%;
+		font-size: 12px;
+
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+	   	
+    header nav ul li {
+        width: 100%;
+
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 8px 10px;
+        text-align: left;
+        font-size: 0.9em;
+    }
+
+    /* メインビジュアル */
+    .hero-text-area {
+        max-width: 100%;
+        text-align: center; 
+    }
+
+    .hero h1, .hero .hero-description {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.6em; 
+        line-height: 1.4; 
+    }
+
+    .hero .hero-description {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .hero-buttons ul li {
+         width: 200px;
+    }
+
+    .hero-buttons ul li .btn {
+        padding: 12px 10px;
+        font-size: 1em;
+    }
+
+    .hero-image-area {
+        padding-bottom: 0; 
+    }
+
+    .hero-combined-image {
+        max-width: 90%;
+    }
+
+    /* お悩み解決項目 */
+    .problem-tabs {
+        justify-content: flex-start; 
+        gap: 10px;
+    }
+
+    .problem-tab {
+        min-width: 170px; 
+        padding: 14px 10px;
+        font-size: 0.8em;
+		margin: 0 auto;
+		align-items: center;
+		text-align: center;
+    }
+    }
+
+    .problem-tab dt {
+        font-size: 0.95em;
+    }
+
+	.problem-tab dd {
+        display: none; /*  ここでddタグを非表示にする */
+    }
+
+    .problem-area, .solution-area {
+        gap: 15px;
+    }
+
+    .problem-area-left, .solution-area-left {
+        width: 100px; 
+        margin-bottom: 5px;
+    }
+
+    .problem-area-right h3, .solution-area-right h3 {
+        font-size: 1.2em;
+        text-align: center; 
+    }
+
+    .problem-area-right ul, .solution-area-right p {
+        font-size: 0.9em;
+        padding-left: 10px; 
+    }
+
+    /* 新しい機能紹介セクション */
+    .features-overview h2 {
+        font-size: 1.6em;
+    }
+
+    .feature-circles {
+        flex-direction: column;
+        align-items: center; 
+        gap: 15px;
+    }
+
+    .feature-circle {
+        width: 150px; 
+        height: 150px;
+        font-size: 0.95em;
+        line-height: 1.3;
+    }
+
+    .features-cta .btn {
+        width: 90%; 
+        max-width: 300px;
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    /* 料金システム */
+    .initial-cost-box {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .initial-cost-box h3 {
+        font-size: 1.1em;
+        margin: -10px -10px 10px -10px;
+    }
+    .initial-cost-box .cost-value {
+        font-size: 3em;
+    }
+    .price-calc-area {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .price-plan-item {
+        width: 90%;
+        max-width: 300px;
+        padding: 15px;
+    }
+    .price-plan-item .item-title {
+        font-size: 0.9em;
+    }
+    .price-plan-item .item-value {
+        font-size: 1.1em;
+    }
+    .price-plan-item .item-value .amount {
+        font-size: 1.4em;
+    }
+    .user-icons-new img {
+        width: 90px;
+    }
+    .operator {
+        font-size: 2em; 
+        margin: 10px 0; 
+    }
+    .monthly-fee-note {
+        font-size: 0.75em;
+        margin-bottom: 20px;
+    }
+    .support-area {
+        padding: 10px 15px;
+        gap: 5px;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+    .support-label {
+        font-size: 1em;
+    }
+    .support-text {
+        font-size: 0.9em;
+    }
+    .support-note {
+        font-size: 0.7em;
+        margin-bottom: 30px;
+    }
+
+    /* CTAのボタン */
+    .cta p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+		text-align: center;
+    }
+
+	
+    .cta .cta-buttons ul {
+		text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .cta .cta-buttons ul li {
+         width: 200px;
+    }
+    .cta .cta-buttons ul li .btn {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    /* よくある質問 */
+	.faq-item .question{
+		padding: 10px 20px;
+	 }	
+    .faq-item .answer {
+        padding: 0 20px;
+    }
+    .faq-item .question p {
+        font-size: 1em;
+    }
+    .faq-item.active .answer {
+        max-height: 500px; 
+    }
+
+    /* CTAのボタン */
+    .bottom-cta p {
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    .bottom-cta .cta-buttons ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin: 0 auto;
+    }
+    .bottom-cta .cta-buttons ul li {
+        width: 200px;
+    }
+    .bottom-cta .cta-buttons ul li .btn {
+        padding: 12px 10px;
+        font-size: 0.9em;
+    }
+
+    /* フッター */
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-logo {
+        flex-direction: column; 
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer-logo img {
+        height: 100%;
+    }
+
+    .footer-logo-text {
+        font-size: 1.1em;
+    }
+
+    .footer-sub-text {
+        font-size: 0.75em;
+        top: 0; 
+    }
+
+    .copyright, .company-info, .footer-links {
+        font-size: 0.8em;
+    }
+
+    .company-info {
+        margin-top: 5px;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+
+
+/* さらに小さなデバイス用 */
+@media (max-width: 374px) {
+    .problem-tab {
+        min-width: 180px;
+    }
+}
+
