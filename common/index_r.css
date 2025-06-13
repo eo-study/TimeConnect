@@ -83,23 +83,30 @@
     }
 
     /* お悩み解決項目 */
-    .problem-tabs {
-        justify-content: center;
+  	.problem-tabs {
+        flex-direction: row; 
+        flex-wrap: nowrap;  
+        justify-content: space-around; 
+        gap: 10px; 
+        overflow-x: auto;  
+        padding-bottom: 10px; 
     }
 
     .problem-tab {
-        min-width: 100%;
-        padding: 15px;
-		text-align: center;
+        flex-shrink: 1; 
+        min-width: 100px; 
+        padding: 10px 5px; 
+        font-size: 0.8em;
+        margin: 0 auto; 
     }
-
     .problem-tab dt {
-        font-size: 1em;
-    }
-
-    .problem-tab dd {
         font-size: 0.85em;
-        margin-top: 3px;
+        line-height: 1.2;
+        white-space: normal;
+        word-break: break-all; 
+    }
+    .problem-tab dd {
+        display: none; 
     }
 
     /* お悩み解決エリアの画像とテキストの折り返し */
