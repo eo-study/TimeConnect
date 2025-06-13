@@ -357,22 +357,15 @@
     }
 
     /* お悩み解決項目 */
-	.problem-contents {
-		max-width: 100%;
-	    padding: 8px;
-
-	}	
     .problem-tabs {
         justify-content: flex-start; 
         gap: 10px;
     }
 
     .problem-tab {
-        min-width: 90%; 
-        padding: 12px 5px;
+        min-width: 170px; 
+        padding: 14px 10px;
         font-size: 0.8em;
-		display: flex; 
-    	flex-direction: column; /* 縦並び */
 		margin: 0 auto;
 		align-items: center;
 		text-align: center;
@@ -388,7 +381,7 @@
     }
 
     .problem-area, .solution-area {
-        gap: 15px;
+        gap: 10px;
     }
 
     .problem-area-left, .solution-area-left {
@@ -403,7 +396,7 @@
 
     .problem-area-right ul, .solution-area-right p {
         font-size: 0.9em;
-        padding-left: 10px; 
+        padding-left: 8px; 
     }
 
     /* 新しい機能紹介セクション */
@@ -583,11 +576,12 @@
     .footer-links {
         margin-top: 10px;
     }
-}
+
 
 /* さらに小さなデバイス用 */
 @media (max-width: 374px) {
     .problem-tab {
+        min-width: 180px;
     }
 }
 
