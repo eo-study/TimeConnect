@@ -365,7 +365,7 @@
 
 }
 	.problems-solution {
-    padding: 40px 10px 30px 10px;
+    padding: 40px 8px 30px 8px;
 
 }
    
@@ -373,15 +373,13 @@
         justify-content: flex-start; 
         gap: 10px;
 		margin: 2px auto 10px auto;
-		margin-bottom: 2px:
     }
 
     .problem-tab {
         min-width: 80px; 
-		max-width: 100px;
         padding: 8px 5px;
 		text-align: center;
-		margin: 2px auto;
+		margin: 5px auto;
         font-size: 0.78em;
     }
 
@@ -399,11 +397,11 @@
 
     .problem-area-left, .solution-area-left {
         width: 90px; 
-        margin-bottom: 3px;
+        margin-bottom: 2px;
     }
 
     .problem-area-right h3, .solution-area-right h3 {
-        font-size: 1em;
+        font-size: 0.95em;
         text-align: center; 
     }
 
