@@ -83,7 +83,7 @@
     }
 
     /* お悩み解決項目 */
-    .problem-tabs {
+ .problem-tabs {
         justify-content: center;
     }
 
@@ -356,19 +356,34 @@
     }
 
     /* お悩み解決項目 */
+	.problem-contents {
+	margin-left: 5px;
+  	margin-right: 5px;
+	max-width: 100%;
+    padding: 5px;
+
+}
+	.problems-solution {
+    padding: 40px 10px 30px 10px;
+
+}
+   
     .problem-tabs {
         justify-content: flex-start; 
         gap: 10px;
+		margin: 0 auto;
     }
 
     .problem-tab {
-        min-width: 120px; 
-        padding: 14px 10px;
-        font-size: 0.8em;
+        min-width: 80px; 
+        padding: 8px 5px;
+		text-align: center;
+		margin: 0 auto;
+        font-size: 0.78em;
     }
 
     .problem-tab dt {
-        font-size: 0.95em;
+        font-size: 0.78em;
     }
 
 	.problem-tab dd {
@@ -578,4 +593,3 @@
         min-width: 150px;
     }
 }
-
