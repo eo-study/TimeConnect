@@ -372,6 +372,7 @@
         justify-content: flex-start; 
         gap: 10px;
 		margin: 2px auto 10px auto;
+		margin-bottom: 2px:
     }
 
     .problem-tab {
@@ -380,7 +381,6 @@
         padding: 8px 5px;
 		text-align: center;
 		margin: 2px auto;
-		margin-bottom: 5px;
         font-size: 0.78em;
     }
 
