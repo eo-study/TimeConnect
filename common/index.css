@@ -253,21 +253,21 @@ header nav ul li a.btn {
     font-size: 1.2em;
     color: #555;
     margin-bottom: 40px;
-    text-align: left; /* 左寄せ */
+    text-align: left; 
 }
 
-.hero-buttons ul { /* hero-buttonsのulにFlexboxを適用 */
+.hero-buttons ul {
     display: flex;
-    gap: 15px; /* ボタン間のスペース */
-    flex-wrap: wrap; /* 小さい画面で折り返す */
-    list-style: none; /* リストの点を削除 */
-    margin: 0; /* デフォルトマージンをリセット */
-    padding: 0; /* デフォルトパディングをリセット */
-    justify-content: flex-start; /* 左寄せ */
+    gap: 15px; 
+    flex-wrap: wrap; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+    justify-content: flex-start;
 }
 
 .hero-buttons ul li .btn {
-    display: block; /* liの中でボタンをブロック要素にする */
+    display: block; 
 }
 
 /* お悩み解決項目 (Problems Solution Section) */
@@ -286,24 +286,24 @@ header nav ul li a.btn {
     gap: 15px; 
     margin-bottom: 20px;
     overflow-x: auto;
-    padding-bottom: 10px;
+    padding:0 5px;
 }
 
 .problem-tab {
     cursor: pointer;
-    padding: 10px; /* パディングを調整 */
+    padding: 10px; 
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
     text-align: center;
     transition: all 0.3s ease;
-    flex-shrink: 0; /* 縮まないように */
-    min-width: 250px; /* タブの最小幅を画像に合わせて調整 */
+    flex-shrink: 0;
+    min-width: 250px; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     display: flex; 
-    flex-direction: column; /* 縦並び */
-    justify-content: center; /* 垂直方向の中央揃え */
-    align-items: center; /* 水平方向の中央揃え */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .problem-tab:hover {
@@ -327,7 +327,7 @@ header nav ul li a.btn {
     margin: 0;
     font-size: 1.1em;
     font-weight: bold;
-    color: #333; /* 非アクティブ時のdtの色 */
+    color: #333; 
 }
 
 .problem-tab.active dt {
