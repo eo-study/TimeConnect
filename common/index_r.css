@@ -371,15 +371,16 @@
     .problem-tabs {
         justify-content: flex-start; 
         gap: 10px;
-		margin: 2px auto 5px auto;
+		margin: 2px auto 10px auto;
     }
 
     .problem-tab {
         min-width: 80px; 
-		max-width: 150px;
+		max-width: 100px;
         padding: 8px 5px;
 		text-align: center;
 		margin: 2px auto;
+		margin-bottom: 5px;
         font-size: 0.78em;
     }
 
